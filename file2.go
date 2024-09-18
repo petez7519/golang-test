@@ -7,6 +7,6 @@ func Multiply(a, b int) int {
     return a * b
 }
 
-func main() {
+func anothermain() {
     fmt.Println("Multiplication:", Multiply(2, 3))
 }
