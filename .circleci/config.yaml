@@ -1,0 +1,24 @@
+version: 2.1
+
+executors:
+  go-executor:
+    docker:
+      - image: circleci/golang:1.16
+
+jobs:
+  test:
+    executor: go-executor
+    parallelism: 4
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: |
+            go test -v ./file1.go ./file2.go -run TestPart$(circleci tests split --total=10)
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
+
