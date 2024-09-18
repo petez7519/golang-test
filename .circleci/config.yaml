@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Run tests
           command: |
-            go test -v ./file1.go ./file2.go -run TestPart$(circleci tests split --total=10)
+            go test -v ./file1.go -run TestPart$(circleci tests split --total=10)
 
 workflows:
   version: 2
