@@ -3,7 +3,7 @@ ackage main
 import "fmt"
 
 // Multiply multiplies two integers and returns the result.
-func Multiply(a, b int) int {
+func Main(a, b int) int {
     return a * b
 }
 
