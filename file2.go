@@ -1,12 +1,13 @@
-ackage main
+package main
 
 import "fmt"
 
-// Multiply multiplies two integers and returns the result.
-func Main(a, b int) int {
-    return a * b
+// Function to multiply two numbers
+func multiply(a int, b int) int {
+	return a * b
 }
 
-func Multiply() {
-    fmt.Println("Multiplication:", Multiply(2, 3))
+func main() {
+	result := multiply(2, 3)
+	fmt.Println("The product of 2 and 3 is:", result)
 }
