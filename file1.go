@@ -2,11 +2,12 @@ package main
 
 import "fmt"
 
-// Add adds two integers and returns the result.
-func Main(a, b int) int {
-    return a + b
+// Function to add two numbers
+func add(a int, b int) int {
+	return a + b
 }
 
-func Add() {
-    fmt.Println("Addition:", Add(2, 3))
+func main() {
+	result := add(2, 3)
+	fmt.Println("The sum of 2 and 3 is:", result)
 }
